@@ -1,0 +1,85 @@
+/* radial-gradient has three parameters (shape,center colour,outside color */
+
+body{
+    background: radial-gradient(circle, #fff, #ccc);
+    height: 100%;
+}
+
+#container{
+    position: relative;
+    z-index: 1;
+    height: 120vh;
+    background-color: #9DD2EA;
+    margin: 10px auto;
+    box-shadow: 0 6px 0 0 gray;
+    padding: 20px;
+}
+
+#counter{
+    height: 8vh;
+    background-color: yellow;    
+    font-size: 3vh;
+}
+
+#fruitcontainer{
+    position: relative;
+    height: 60vh;
+    background-color: #fff;
+    font-size: 5vh;
+    font-weight: bold;
+    margin: 20px auto 10px auto; 
+    overflow: hidden;
+    cursor: crosshair;
+}
+
+#instructions{
+    height: 10vh;
+    background-color: violet;
+    font-size: 3vh;
+}
+
+#startreset:hover{
+    background-color : rgb(235, 255, 51);
+    box-shadow: 0 0 2px 0 gray;
+}
+
+#gameover{
+    position: absolute;
+    z-index: 2;
+    height: 30vh;
+    background: linear-gradient(#F3CA6B, #F37063);
+    font-size: 3vh;
+    text-transform: uppercase;
+    left: 25vw;
+    top: 25vh;
+}
+
+.fruit{
+    position: absolute;
+
+}
+
+.fa-heart{
+    color: rgb(212, 12, 12);
+}
+#trailsleft{
+    visibility: hidden;
+}
+/* Common Attributes */
+#container, #counter, #startreset, #trailsleft{
+    border-radius: 10px;    
+}
+
+#counter, #fruitcontainer, #instructions, #startreset, #trailsleft{
+    box-shadow: 0 4px 0 0 gray;
+}
+
+#startreset, #trailsleft{
+    font-size: 3vh;
+    cursor: pointer;
+    height: 7vh;
+}
+
+#correct, #wrong, #gameover, .fruit{
+    display: none;
+}
